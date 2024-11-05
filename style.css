@@ -100,14 +100,32 @@ body {
     color: #333;
 }
 
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #00bcd4, #0061a8);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 12px;  /* Rounded container edges */
 }
 
+/* Navbar */
 .header {
     background-color: #333;
     color: #fff;
@@ -136,7 +154,7 @@ body {
     color: #fff;
     font-weight: 400;
     padding: 8px 16px;
-    border-radius: 20px; /* Rounded nav links */
+    border-radius: 20px;
     transition: background-color 0.2s ease;
 }
 
@@ -145,6 +163,7 @@ body {
     color: #fff;
 }
 
+/* Profile, Projects, Contact Sections */
 .profile, .projects, .contact {
     background-color: #fff;
     margin: 20px 0;
@@ -153,17 +172,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Project Cards */
 .projects .project-item {
+    background: #f9f9f9;
     margin-bottom: 20px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects .project-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .projects .project-item h3 {
@@ -171,6 +192,7 @@ body {
     color: #00bcd4;
 }
 
+/* Contact Link */
 .contact a {
     display: inline-block;
     margin-top: 10px;
@@ -178,26 +200,13 @@ body {
     color: #00bcd4;
     font-weight: 700;
     padding: 8px 16px;
-    border-radius: 20px; /* Rounded button */
+    border-radius: 20px;
     transition: background-color 0.2s ease;
 }
 
 .contact a:hover {
     background-color: #333;
     color: #fff;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 0.9em;
 }
 
 /* Sidebar Styling */
@@ -219,11 +228,27 @@ body {
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .sidebar ul li {
     margin: 8px 0;
     color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.sidebar ul li .icon {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
