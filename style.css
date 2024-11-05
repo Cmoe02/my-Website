@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -86,4 +86,144 @@ body {
 .footer p {
     margin: 0;
     font-size: 0.9em;
+}
+*/
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;  /* Rounded container edges */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 20px; /* Rounded nav links */
+    transition: background-color 0.2s ease;
+}
+
+.nav ul li a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.profile, .projects, .contact {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.projects .project-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project-item h3 {
+    margin: 0 0 10px;
+    color: #00bcd4;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.2s ease;
+}
+
+.contact a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    width: 200px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 8px 0;
+    color: #333;
 }
